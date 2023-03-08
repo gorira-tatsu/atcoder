@@ -1,8 +1,6 @@
-a_and_b = [int(x) for x in input().split()]
-a = a_and_b[0]
-b = a_and_b[1]
+ss = input()
+result = []
+for i in range(len(ss)):
+    result.append(int(ss[i]))
 
-if (a*b) % 2 == 0:
-    print('Even')
-else:
-    print('Odd')
+print(sum(result))
