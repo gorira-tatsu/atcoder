@@ -1,8 +1,8 @@
-a = int(input())
-bandc = input().split()
-b = int(bandc[0])
-c = int(bandc[1])
-s = input()
+a_and_b = [int(x) for x in input().split()]
+a = a_and_b[0]
+b = a_and_b[1]
 
-print(f'{a+b+c} {s}')
-
+if (a*b) % 2 == 0:
+    print('Even')
+else:
+    print('Odd')
